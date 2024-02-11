@@ -1,10 +1,12 @@
 /* ==UserStyle==
-@name 126邮箱深色模式
-@homepageURL https://github.com/Steven-Zhl/4BetterBrowser/CSS#126邮箱深色模式
-@version 1.0-beta
-@license GPL-3.0
-@description 针对网易126邮箱(mail.126.com)的深色模式的样式表，使用 prefers-color-scheme ，跟随浏览器主题进行深色/浅色模式自动切换。
-@author Steven-Zhl
+@name         126邮箱深色模式
+@homepageURL  https://github.com/Steven-Zhl/4BetterBrowser/CSS#126邮箱深色模式
+@version      1.0-beta
+@license      GPL-3.0
+@description  针对网易126邮箱(mail.126.com)的深色模式的样式表，使用 prefers-color-scheme ，跟随浏览器主题进行深色/浅色模式自动切换。
+@author       Steven-Zhl
+@icon         https://mail.126.com/favicon.ico
+#match        https://mail.126.com/*
 ==/UserStyle== */
 
 @charset "UTF-8";
