@@ -2,13 +2,13 @@
 // @name         云南大学校园网美化
 // @namespace    http://tampermonkey.net/
 // @version      1.1.1
+// @license      GPL-3.0
 // @description  云南大学自助服务平台(校园网)美化脚本
 // @author       Steven-Zhl
+// @icon         https://selfsrv.ynu.edu.cn/favicon.ico
 // @match        https://selfsrv.ynu.edu.cn/*
 // @exclude      https://selfsrv.ynu.edu.cn/login
-// @icon         https://selfsrv.ynu.edu.cn/favicon.ico
 // @grant        none
-// @license      GPL-3.0
 // ==/UserScript==
 
 function multiplyHexColor(hexColor, multipliers) {
