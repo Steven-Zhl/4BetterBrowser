@@ -6,107 +6,95 @@ $font-title: #cdcdcd;
 $font-content: #8f8f8f;
 $font-link: #7d90a9;
 
-@media (prefers-color-scheme: dark) {
-    /* PC端界面 */
-    div.frame-main-cont-body {
-        background-color: $layer0-bg;
-        color: $font-content;
-
-        div.gWel-recommend.gWel-promt-radius.nui-closeable { // 首页的“邮推荐”和“看世界”
-            background-color: $layer1-bg;
-            border-color: $border;
+@-moz-document regexp("https?://(hw\\.)?mail\\.126\\.com/.*") {
+    @media (prefers-color-scheme: dark) {
+        /* PC端界面 */
+        div.frame-main-cont-body {
+            background-color: $layer0-bg;
             color: $font-content;
 
-            ul {
-                background-color: $layer2-bg;
-                border-color: $border;
-
-                li {
-                    background-color: $layer2-bg;
-                }
-            }
-        }
-    }
-    div.frame-nav {
-        background-color: $layer0-bg;
-        border-color: $border;
-        color: $font-content;
-
-        div#dvNavTop { // 导航栏顶部
-            background-color: $layer2-bg;
-
-            ul li {
-                color: $layer2-bg;
-                background-color: $layer2-bg;
-                background-image: none;
-
-                span {
-                    text-shadow: none;
-                }
-            }
-        }
-
-        div#dvNavTree { // 左侧导航栏
-            background-color: $layer1-bg;
-
-            ul {
+            div.gWel-recommend.gWel-promt-radius.nui-closeable { // 首页的“邮推荐”和“看世界”
                 background-color: $layer1-bg;
                 border-color: $border;
                 color: $font-content;
 
-                li {
+                ul {
+                    background-color: $layer2-bg;
                     border-color: $border;
-                    color: $font-content;
 
-                    div.js-component-component.nui-tree-item-label-hover,
-                    div.js-component-component.nui-tree-item-label-active {
-                        background-color: $layer2-bg;
-                        background-image: none;
-                    }
-
-                    div.js-component-component.nui-tree-item-label-selected {
-                        background-color: $layer2-bg;
-                        background-image: none;
-
-                        span {
-                            color: $font-title;
-                            text-shadow: none;
-                        }
-                    }
-                }
-
-                li#dvNavFoot {
-                    &:before {
-                        background-color: $font-content;
-                    }
-
-                    div.GV0 div:hover {
-                        background-image: none;
+                    li {
                         background-color: $layer2-bg;
                     }
                 }
             }
         }
-    }
-    div#dvContainer {
-        header { // 收件箱上方顶栏
-            background-color: $layer1-bg;
+        div.frame-nav {
+            background-color: $layer0-bg;
+            border-color: $border;
+            color: $font-content;
 
-            div.nui-toolbar-item div {
+            div#dvNavTop { // 导航栏顶部
                 background-color: $layer2-bg;
-                color: $font-content;
 
-                span {
+                ul li {
+                    color: $layer2-bg;
                     background-color: $layer2-bg;
-                    border-color: $border;
-                    color: $font-content;
+                    background-image: none;
+
+                    span {
+                        text-shadow: none;
+                    }
                 }
             }
 
-            div.nui-toolbar-ext div.nui-toolbar-item {
-                div.js-component-calendar.nui-calendar,
-                div.js-component-select.nui-simpleSelect.nui-select {
-                    background-color: $layer2-bg !important;
+            div#dvNavTree { // 左侧导航栏
+                background-color: $layer1-bg;
+
+                ul {
+                    background-color: $layer1-bg;
+                    border-color: $border;
+                    color: $font-content;
+
+                    li {
+                        border-color: $border;
+                        color: $font-content;
+
+                        div.js-component-component.nui-tree-item-label-hover,
+                        div.js-component-component.nui-tree-item-label-active {
+                            background-color: $layer2-bg;
+                            background-image: none;
+                        }
+
+                        div.js-component-component.nui-tree-item-label-selected {
+                            background-color: $layer2-bg;
+                            background-image: none;
+
+                            span {
+                                color: $font-title;
+                                text-shadow: none;
+                            }
+                        }
+                    }
+
+                    li#dvNavFoot {
+                        &:before {
+                            background-color: $font-content;
+                        }
+
+                        div.GV0 div:hover {
+                            background-image: none;
+                            background-color: $layer2-bg;
+                        }
+                    }
+                }
+            }
+        }
+        div#dvContainer {
+            header { // 收件箱上方顶栏
+                background-color: $layer1-bg;
+
+                div.nui-toolbar-item div {
+                    background-color: $layer2-bg;
                     color: $font-content;
 
                     span {
@@ -116,10 +104,120 @@ $font-link: #7d90a9;
                     }
                 }
 
+                div.nui-toolbar-ext div.nui-toolbar-item {
+                    div.js-component-calendar.nui-calendar,
+                    div.js-component-select.nui-simpleSelect.nui-select {
+                        background-color: $layer2-bg !important;
+                        color: $font-content;
+
+                        span {
+                            background-color: $layer2-bg;
+                            border-color: $border;
+                            color: $font-content;
+                        }
+                    }
+
+                    div.js-component-button.nui-roundBtn.nui-btn.nui-btn-hasIcon.nui-roundBtn-hasIcon.nui-btn-disabled.nui-roundBtn-disabled {
+                        span {
+                            background-color: $layer1-bg !important;
+                            border-color: $border !important;
+                        }
+                    }
+
+                    div.js-component-button.nui-roundBtn.nui-btn.nui-btn-hasIcon.nui-roundBtn-hasIcon {
+                        span {
+                            background-color: $layer2-bg !important;
+                            border-color: $border !important;
+                        }
+                    }
+                }
+            }
+
+            div.js-component-menu.nui-menu { // 顶栏点开后的各个悬浮菜单，比如“标记为”的二级菜单
+                background-color: $layer1-bg;
+                border-color: $border;
+
+                div.nui-menu-split.nui-split {
+                    border-color: $border;
+                }
+
+                div {
+                    background-color: $layer1-bg;
+                    border-color: $border;
+                    color: $font-content;
+
+                    &:hover {
+                        background-color: $layer2-bg;
+                    }
+                }
+            }
+
+            div.gWel-avatar img { // 头像
+                filter: invert(0.75);
+            }
+
+            div.frame-main-cont-body.nui-scroll { // 收件箱、星标邮件等页面的主体
+                background-color: $layer0-bg;
+
+                div.Bp0 div { // 背景图反色
+                    filter: invert(1);
+                }
+
+                div.js-component-layer.nui-dateLayer.nui-layer { // 相关弹出菜单，如日期菜单
+                    background-color: $layer1-bg;
+                    border-color: $border;
+
+                    div.nui-dateLayer-title {
+                        background-color: $layer2-bg;
+
+                        strong {
+                            color: $font-title;
+                        }
+
+                        span.nui-txt-link {
+                            color: $font-link;
+                        }
+                    }
+
+                    div.nui-dateLayer-calendar {
+                        table tbody tr {
+                            th {
+                                color: $font-title;
+                            }
+
+                            td.nui-dateLayer-calendar-todayCell b {
+                                color: white !important;
+                            }
+
+                            td b {
+                                color: $font-link !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            div.tv0 { // 收件箱主页面
+                div.nui-txt-flag0 {
+                    color: $font-content;
+
+                    div {
+                        background-color: $layer0-bg;
+
+                        div.gB0 label.nui-chk.cS0 span {
+                            background-color: $layer2-bg;
+                            border-color: $border;
+                        }
+                    }
+                }
+            }
+
+            div.nui-btnGroup {
                 div.js-component-button.nui-roundBtn.nui-btn.nui-btn-hasIcon.nui-roundBtn-hasIcon.nui-btn-disabled.nui-roundBtn-disabled {
                     span {
                         background-color: $layer1-bg !important;
                         border-color: $border !important;
+                        color: $font-content !important;
                     }
                 }
 
@@ -127,440 +225,344 @@ $font-link: #7d90a9;
                     span {
                         background-color: $layer2-bg !important;
                         border-color: $border !important;
+                        color: $font-title !important;
                     }
                 }
             }
-        }
 
-        div.js-component-menu.nui-menu { // 顶栏点开后的各个悬浮菜单，比如“标记为”的二级菜单
-            background-color: $layer1-bg;
-            border-color: $border;
-
-            div.nui-menu-split.nui-split {
-                border-color: $border;
-            }
-
-            div {
-                background-color: $layer1-bg;
-                border-color: $border;
-                color: $font-content;
-
-                &:hover {
-                    background-color: $layer2-bg;
-                }
-            }
-        }
-
-        div.gWel-avatar img { // 头像
-            filter: invert(0.75);
-        }
-
-        div.frame-main-cont-body.nui-scroll { // 收件箱、星标邮件等页面的主体
-            background-color: $layer0-bg;
-
-            div.Bp0 div { // 背景图反色
-                filter: invert(1);
-            }
-
-            div.js-component-layer.nui-dateLayer.nui-layer { // 相关弹出菜单，如日期菜单
-                background-color: $layer1-bg;
-                border-color: $border;
-
-                div.nui-dateLayer-title {
-                    background-color: $layer2-bg;
-
-                    strong {
-                        color: $font-title;
-                    }
-
-                    span.nui-txt-link {
-                        color: $font-link;
+            div.frame-main.frame-main-noNav { // 写信页面主体
+                header.frame-main-cont-head { // 写信页的顶栏
+                    div.nui-toolbar-ext div a {
+                        color: $font-link !important;
                     }
                 }
 
-                div.nui-dateLayer-calendar {
-                    table tbody tr {
-                        th {
-                            color: $font-title;
-                        }
-
-                        td.nui-dateLayer-calendar-todayCell b {
-                            color: white !important;
-                        }
-
-                        td b {
-                            color: $font-link !important;
-                        }
-                    }
-                }
-            }
-        }
-
-        div.tv0 { // 收件箱主页面
-            div.nui-txt-flag0 {
-                color: $font-content;
-
-                div {
-                    background-color: $layer0-bg;
-
-                    div.gB0 label.nui-chk.cS0 span {
-                        background-color: $layer2-bg;
-                        border-color: $border;
-                    }
-                }
-            }
-        }
-
-        div.nui-btnGroup {
-            div.js-component-button.nui-roundBtn.nui-btn.nui-btn-hasIcon.nui-roundBtn-hasIcon.nui-btn-disabled.nui-roundBtn-disabled {
-                span {
-                    background-color: $layer1-bg !important;
-                    border-color: $border !important;
-                    color: $font-content !important;
-                }
-            }
-
-            div.js-component-button.nui-roundBtn.nui-btn.nui-btn-hasIcon.nui-roundBtn-hasIcon {
-                span {
-                    background-color: $layer2-bg !important;
-                    border-color: $border !important;
-                    color: $font-title !important;
-                }
-            }
-        }
-
-        div.frame-main.frame-main-noNav { // 写信页面主体
-            header.frame-main-cont-head { // 写信页的顶栏
-                div.nui-toolbar-ext div a {
-                    color: $font-link !important;
-                }
-            }
-
-            div.frame-main-cont-body.nui-scroll {
-                header { // 收件人/主题栏
-                    background-color: $layer0-bg;
-                    color: $font-content;
-
-                    div.kZ0 {
+                div.frame-main-cont-body.nui-scroll {
+                    header { // 收件人/主题栏
+                        background-color: $layer0-bg;
                         color: $font-content;
 
-                        label.fn0 a {
-                            color: $font-link !important;
+                        div.kZ0 {
+                            color: $font-content;
+
+                            label.fn0 a {
+                                color: $font-link !important;
+                            }
+
+                            div.dG0 {
+                                background-color: $layer0-bg;
+                                color: $font-title;
+
+                                div input {
+                                    color: $font-title;
+                                }
+                            }
                         }
 
-                        div.dG0 {
-                            background-color: $layer0-bg;
-                            color: $font-title;
+                        div.dc2 div.kZ0 div.bz0 { // “日程邀请”相关菜单
+                            div.js-component-input.nui-ipt {
+                                background-color: $layer1-bg !important;
+                                border-color: $border;
+                            }
 
-                            div input {
+                            div.js-component-select.nui-select.nui-select-disabled {
+                                background-color: $layer0-bg !important;
+                                border-color: $border !important;
+
+                                div.js-component-input.nui-ipt.nui-ipt-disabled {
+                                    background-color: $layer0-bg !important;
+
+                                    input {
+                                        color: $font-content !important;
+                                    }
+                                }
+                            }
+
+                            div.js-component-select.nui-select {
+                                background-color: $layer1-bg !important;
+                                border-color: $border !important;
+
+                                div.js-component-input.nui-ipt {
+                                    background-color: $layer1-bg !important;
+                                }
+                            }
+
+                            input {
                                 color: $font-title;
                             }
                         }
                     }
 
-                    div.dc2 div.kZ0 div.bz0 { // “日程邀请”相关菜单
-                        div.js-component-input.nui-ipt {
-                            background-color: $layer1-bg !important;
+                    section {
+                        div.APP-editor.APP-editor-basic {
+                            background-color: $border;
                             border-color: $border;
-                        }
 
-                        div.js-component-select.nui-select.nui-select-disabled {
-                            background-color: $layer0-bg !important;
-                            border-color: $border !important;
-
-                            div.js-component-input.nui-ipt.nui-ipt-disabled {
-                                background-color: $layer0-bg !important;
-
-                                input {
-                                    color: $font-content !important;
-                                }
-                            }
-                        }
-
-                        div.js-component-select.nui-select {
-                            background-color: $layer1-bg !important;
-                            border-color: $border !important;
-
-                            div.js-component-input.nui-ipt {
-                                background-color: $layer1-bg !important;
-                            }
-                        }
-
-                        input {
-                            color: $font-title;
-                        }
-                    }
-                }
-
-                section {
-                    div.APP-editor.APP-editor-basic {
-                        background-color: $border;
-                        border-color: $border;
-
-                        div.APP-editor-tbar {
-                            background-color: $layer1-bg;
-                            border-color: $border;
-                            // 分隔符
-                            a.APP-editor-btn.APP-editor-btn-spln {
-                                background-color: $border;
-                                width: 2px;
-                            }
-
-                            // 不可选的按钮
-                            a.APP-editor-btn.APP-editor-btn-dis {
-                                &:after {
-                                    background-color: $layer1-bg;
+                            div.APP-editor-tbar {
+                                background-color: $layer1-bg;
+                                border-color: $border;
+                                // 分隔符
+                                a.APP-editor-btn.APP-editor-btn-spln {
+                                    background-color: $border;
+                                    width: 2px;
                                 }
 
-                                span b {
-                                    background-image: none;
-                                }
-                            }
+                                // 不可选的按钮
+                                a.APP-editor-btn.APP-editor-btn-dis {
+                                    &:after {
+                                        background-color: $layer1-bg;
+                                    }
 
-                            // 可选的按钮
-                            a.APP-editor-btn.APP-editor-commond-btn, a.APP-editor-commond-btn {
-                                b {
-                                    background-color: $layer1-bg;
-
-                                    &:hover {
-                                        background-color: $layer2-bg;
+                                    span b {
+                                        background-image: none;
                                     }
                                 }
 
-                                span {
-                                    background-color: $layer1-bg;
-
-                                    &:hover {
-                                        background-color: $layer2-bg;
-                                    }
-
+                                // 可选的按钮
+                                a.APP-editor-btn.APP-editor-commond-btn, a.APP-editor-commond-btn {
                                     b {
                                         background-color: $layer1-bg;
-                                        border-color: $border;
 
                                         &:hover {
                                             background-color: $layer2-bg;
                                         }
                                     }
+
+                                    span {
+                                        background-color: $layer1-bg;
+
+                                        &:hover {
+                                            background-color: $layer2-bg;
+                                        }
+
+                                        b {
+                                            background-color: $layer1-bg;
+                                            border-color: $border;
+
+                                            &:hover {
+                                                background-color: $layer2-bg;
+                                            }
+                                        }
+                                    }
                                 }
                             }
-                        }
 
-                        div.APP-editor-edtr iframe.APP-editor-iframe {
-                            filter: invert(1);
+                            div.APP-editor-edtr iframe.APP-editor-iframe {
+                                filter: invert(1);
+                            }
                         }
                     }
                 }
             }
         }
-    }
-    div#dvSubContainer {
-        div.frame-main.columns-lr-view {
-            background-color: $layer1-bg;
+        div#dvSubContainer {
+            div.frame-main.columns-lr-view {
+                background-color: $layer1-bg;
 
-            header {
+                header {
+                    background-color: $layer1-bg;
+                    border-color: $border;
+
+                    div {
+                        color: $font-content;
+                        background-color: $layer2-bg;
+                        border-color: $border;
+                    }
+                }
+            }
+
+            div.frame-main-cont-body.nui-scroll {
                 background-color: $layer1-bg;
                 border-color: $border;
 
-                div {
-                    color: $font-content;
+                section div.nui-simpleTree.nui-tree div div span:hover {
                     background-color: $layer2-bg;
-                    border-color: $border;
                 }
             }
         }
+        /* 移动端界面 */
+        div.js-component-menu.menu {
+            background-color: $layer2-bg;
 
-        div.frame-main-cont-body.nui-scroll {
-            background-color: $layer1-bg;
-            border-color: $border;
-
-            section div.nui-simpleTree.nui-tree div div span:hover {
+            div.js-component-menuitem.menu-item {
                 background-color: $layer2-bg;
-            }
-        }
-    }
-    /* 移动端界面 */
-    div.js-component-menu.menu {
-        background-color: $layer2-bg;
-
-        div.js-component-menuitem.menu-item {
-            background-color: $layer2-bg;
-            border-color: $border;
-            color: $font-title;
-        }
-    }
-
-    div.js-component-button.btn-normal2 { // 常规按钮
-        background-color: $layer1-bg;
-        box-shadow: none;
-        border-color: $border;
-        border-width: 1px;
-        color: $layer1-bg;
-
-        span.btn-inner {
-            color: $font-content;
-            border-color: $border;
-            background-image: linear-gradient($layer2-bg, $layer2-bg);
-        }
-    }
-
-    div.js-component-button.btn-main { // “确定”和“发送”按钮
-        background-color: #0e5500;
-        background-image: none;
-        border-color: $border;
-        color: $layer1-bg;
-
-        span.btn-inner {
-            color: $font-title;
-            border-color: $border;
-            background-color: #0e5500;
-            background-image: none;
-        }
-    }
-
-    div.js-component-input.ipt-multiLine.ipt {
-        background-image: linear-gradient($layer2-bg, $layer2-bg);
-        box-shadow: none;
-        border-color: $layer1-bg;
-        border-width: 1.5px;
-        color: $layer1-bg;
-
-        label {
-            color: $font-content;
-        }
-    }
-
-    div.frame {
-
-        div.frame-top {
-            background-color: $layer0-bg;
-            color: $font-content;
-        }
-
-        div.frame-nav, div.frame-main {
-            background-color: $layer2-bg;
-            color: $font-content;
-
-            h2.subject {
+                border-color: $border;
                 color: $font-title;
             }
+        }
 
-            div.inputBar.mInbox-searchBar { //搜索框
-                background-color: $layer1-bg;
+        div.js-component-button.btn-normal2 { // 常规按钮
+            background-color: $layer1-bg;
+            box-shadow: none;
+            border-color: $border;
+            border-width: 1px;
+            color: $layer1-bg;
+
+            span.btn-inner {
+                color: $font-content;
+                border-color: $border;
+                background-image: linear-gradient($layer2-bg, $layer2-bg);
+            }
+        }
+
+        div.js-component-button.btn-main { // “确定”和“发送”按钮
+            background-color: #0e5500;
+            background-image: none;
+            border-color: $border;
+            color: $layer1-bg;
+
+            span.btn-inner {
+                color: $font-title;
+                border-color: $border;
+                background-color: #0e5500;
+                background-image: none;
+            }
+        }
+
+        div.js-component-input.ipt-multiLine.ipt {
+            background-image: linear-gradient($layer2-bg, $layer2-bg);
+            box-shadow: none;
+            border-color: $layer1-bg;
+            border-width: 1.5px;
+            color: $layer1-bg;
+
+            label {
+                color: $font-content;
+            }
+        }
+
+        div.frame {
+
+            div.frame-top {
+                background-color: $layer0-bg;
+                color: $font-content;
+            }
+
+            div.frame-nav, div.frame-main {
+                background-color: $layer2-bg;
                 color: $font-content;
 
-                div.mInbox-searchBar-inner {
-                    div.ipt.bdr-cFocus {
+                h2.subject {
+                    color: $font-title;
+                }
+
+                div.inputBar.mInbox-searchBar { //搜索框
+                    background-color: $layer1-bg;
+                    color: $font-content;
+
+                    div.mInbox-searchBar-inner {
+                        div.ipt.bdr-cFocus {
+                            background-color: $layer2-bg;
+                            color: $font-content;
+                        }
+                    }
+                }
+
+                div.frame-toolbar {
+                    background-color: $layer1-bg !important;
+                    border-color: $layer1-bg !important;
+                    color: $layer1-bg !important;
+                }
+
+                div.js-component-toolbar {
+                    background-color: $layer1-bg !important;
+                    background-image: none !important;
+                    border-color: $layer1-bg !important;
+                    color: $font-title;
+
+                    div.toolbar-optItem {
+                        background-color: transparent;
+                        color: $font-title;
+                    }
+                }
+
+                div.scroll {
+                    background-color: $layer2-bg;
+                    color: $font-content;
+
+                    div.js-component-component {
+                        background-color: $layer1-bg;
+                        color: $font-content;
+                    }
+
+                    div.g-null::after {
                         background-color: $layer2-bg;
                         color: $font-content;
                     }
                 }
             }
+        }
 
-            div.frame-toolbar {
-                background-color: $layer1-bg !important;
-                border-color: $layer1-bg !important;
-                color: $layer1-bg !important;
-            }
-
-            div.js-component-toolbar {
-                background-color: $layer1-bg !important;
-                background-image: none !important;
-                border-color: $layer1-bg !important;
+        div.js-component-msgbox {
+            div.toolbar-colCenter {
+                background-color: $layer1-bg;
                 color: $font-title;
-
-                div.toolbar-optItem {
-                    background-color: transparent;
-                    color: $font-title;
-                }
             }
+        }
 
-            div.scroll {
+        div.mask.mCompose-wrapper {
+            background-color: $layer2-bg;
+
+            div.msgbox.mCompose {
                 background-color: $layer2-bg;
                 color: $font-content;
 
-                div.js-component-component {
-                    background-color: $layer1-bg;
+                div#composeContentArea {
                     color: $font-content;
                 }
 
-                div.g-null::after {
-                    background-color: $layer2-bg;
-                    color: $font-content;
+                div.js-component-toolbar {
+                    background-color: $layer1-bg !important;
+                    background-image: none !important;
+                    border-color: $layer1-bg !important;
+                    color: $font-title;
+
+                    div.toolbar-optItem {
+                        background-color: transparent;
+                        color: $font-title;
+                    }
                 }
             }
+
+            span.mCompose-item-frome-name {
+                color: $font-title;
+            }
+
+            input.ipt-input {
+                color: $font-title;
+            }
         }
-    }
 
-    div.js-component-msgbox {
-        div.toolbar-colCenter {
-            background-color: $layer1-bg;
-            color: $font-title;
-        }
-    }
+        div.list-item, div.list-item-unread.list-item {
+            background-color: $layer2-bg !important;
+            border-color: $border !important;
 
-    div.mask.mCompose-wrapper {
-        background-color: $layer2-bg;
+            span.mail-list-subject {
+                color: $font-title;
+            }
 
-        div.msgbox.mCompose {
-            background-color: $layer2-bg;
-            color: $font-content;
-
-            div#composeContentArea {
+            span.mail-list-frome, span.mail-list-time {
                 color: $font-content;
             }
+        }
 
-            div.js-component-toolbar {
-                background-color: $layer1-bg !important;
-                background-image: none !important;
-                border-color: $layer1-bg !important;
+        div.js-component-msgbox.msgbox-simple.msgbox { // “举报垃圾邮件”弹窗
+            background-color: $layer1-bg;
+
+            div.msgbox-hd {
+                background-color: $layer1-bg;
                 color: $font-title;
+            }
 
-                div.toolbar-optItem {
-                    background-color: transparent;
-                    color: $font-title;
-                }
+            div.msgbox-bd {
+                background-color: $layer1-bg;
+                color: $font-content;
             }
         }
 
-        span.mCompose-item-frome-name {
-            color: $font-title;
+        /* 移除多余的元素 */
+        div.list-item.list-item-sptln {
+            display: none;
         }
-
-        input.ipt-input {
-            color: $font-title;
-        }
-    }
-
-    div.list-item, div.list-item-unread.list-item {
-        background-color: $layer2-bg !important;
-        border-color: $border !important;
-
-        span.mail-list-subject {
-            color: $font-title;
-        }
-
-        span.mail-list-frome, span.mail-list-time {
-            color: $font-content;
-        }
-    }
-
-    div.js-component-msgbox.msgbox-simple.msgbox { // “举报垃圾邮件”弹窗
-        background-color: $layer1-bg;
-
-        div.msgbox-hd {
-            background-color: $layer1-bg;
-            color: $font-title;
-        }
-
-        div.msgbox-bd {
-            background-color: $layer1-bg;
-            color: $font-content;
-        }
-    }
-
-    /* 移除多余的元素 */
-    div.list-item.list-item-sptln {
-        display: none;
     }
 }
