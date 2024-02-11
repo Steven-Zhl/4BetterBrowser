@@ -25,10 +25,10 @@
 
 ### 效果
 
-|设备|Before|After|
-|:-:|:-:|:-:|
-|电脑|![before](../README_IMG/YNU-selfsrv-enhance_Desktop_origin.jpeg)|![after](../README_IMG/YNU-selfsrv-enhance_Desktop_genshin_theme.jpeg)|
-|手机|<img src="../README_IMG/YNU-selfsrv-enhance_Mobile_origin.jpg" alt="before" width="200px">|<img src="../README_IMG/YNU-selfsrv-enhance_Mobile_genshin_theme.jpg" alt="after" width="200px">|
+| 设备 |                                           Before                                           |                                              After                                               |
+|:--:|:------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------:|
+| 电脑 |              ![before](../README_IMG/YNU-selfsrv-enhance_Desktop_origin.jpeg)              |              ![after](../README_IMG/YNU-selfsrv-enhance_Desktop_genshin_theme.jpeg)              |
+| 手机 | <img src="../README_IMG/YNU-selfsrv-enhance_Mobile_origin.jpg" alt="before" width="200px"> | <img src="../README_IMG/YNU-selfsrv-enhance_Mobile_genshin_theme.jpg" alt="after" width="200px"> |
 
 ### 安装链接
 
