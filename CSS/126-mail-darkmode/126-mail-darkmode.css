@@ -10,7 +10,6 @@
 #match        https://mail.126.com/*
 ==/UserStyle== */
 
-@charset "UTF-8";
 @-moz-document regexp("https?://(hw\\.)?mail\\.126\\.com/.*") {
   @media (prefers-color-scheme: dark) {
     /* PC端界面 */
