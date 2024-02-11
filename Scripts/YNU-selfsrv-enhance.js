@@ -1,7 +1,8 @@
 // ==UserScript==
 // @name         云南大学校园网美化
-// @namespace    http://tampermonkey.net/
-// @version      1.1.1
+// @namespace    https://greasyfork.org/zh-CN/scripts/476284-云南大学校园网美化
+// @homepageURL  https://github.com/Steven-Zhl/4BetterBrowser/Scripts#云南大学校园网美化
+// @version      1.1.2
 // @license      GPL-3.0
 // @description  云南大学自助服务平台(校园网)美化脚本
 // @author       Steven-Zhl
