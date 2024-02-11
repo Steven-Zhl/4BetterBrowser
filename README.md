@@ -14,7 +14,7 @@
 
 * [✍各CSS的详细介绍](./CSS/README.md)
 * 📁CSS目录
-  * [126邮箱深色模式](./CSS/126mail-darkmode.css)
+  * [126邮箱深色模式](./CSS/126-mail-darkmode/126-mail-darkmode.css)
 
 ## 我该如何使用？
 
