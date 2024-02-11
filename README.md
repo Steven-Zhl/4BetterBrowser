@@ -2,7 +2,7 @@
 
 > 浏览器脚本，自定义CSS....为了更好的浏览器体验而做的尝试，全都在这里了！
 
-![GitHub License](https://img.shields.io/github/license/Steven-Zhl/4BetterBrowser?label=License) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/Steven-Zhl/4BetterBrowser?label=Commit%20Activity) ![GitHub repo JavaScript file count](https://img.shields.io/github/directory-file-count/Steven-Zhl/4BetterBrowser?label=JavaScript%20Files&type=file&extension=js&color=yellow) ![GitHub repo CSS file count](https://img.shields.io/github/directory-file-count/Steven-Zhl/4BetterBrowser?label=CSS%20Files&type=file&extension=css&color=purple)
+![GitHub License](https://img.shields.io/github/license/Steven-Zhl/4BetterBrowser?label=License) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/Steven-Zhl/4BetterBrowser?label=Commit%20Activity) ![GitHub repo JavaScript file count](https://img.shields.io/github/directory-file-count/Steven-Zhl/4BetterBrowser/Scripts?label=JavaScript%20Files&type=file&extension=js&color=yellow) ![GitHub repo CSS file count](https://img.shields.io/github/directory-file-count/Steven-Zhl/4BetterBrowser/Scripts?label=CSS%20Files&type=file&color=purple)
 
 ## 脚本
 
