@@ -2,7 +2,7 @@
 // @name         云南大学校园网美化
 // @namespace    https://greasyfork.org/zh-CN/scripts/476284-云南大学校园网美化
 // @homepageURL  https://github.com/Steven-Zhl/4BetterBrowser/Scripts#云南大学校园网美化
-// @version      1.1.2
+// @version      1.1.3
 // @license      GPL-3.0
 // @description  云南大学自助服务平台(校园网)美化脚本
 // @author       Steven-Zhl
@@ -145,7 +145,7 @@ function loadBackground(background_link) { // 将图片链接替换为自定义�
     document.querySelectorAll('.panel-heading').forEach(function (panel) { panel.style.opacity = '0.75'; });
 }
 function genshin_theme() { // 加载原神主题
-    loadBackground('https://ys.mihoyo.com/main/_nuxt/img/47f71d4.jpg');
+    loadBackground('https://ys.mihoyo.com/main/_nuxt/img/poster.47f71d4.jpg');
     loadAvatar('https://uploadstatic.mihoyo.com/contentweb/20210105/2021010518424084444.png');
     loadThemeColor("#404040a0");
     loadSidebarColor("#404040");
